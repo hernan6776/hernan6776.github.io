@@ -1,0 +1,58 @@
+
+
+:root {
+--theme-color: white;
+--text-color: black;
+--primary-color: #345AB0;
+--secondary-color: #1fa084;
+--tertiary-color:#1e615b;
+--quaternary-color:#2af10f;
+--navbar-shallow--color:#5BB2A6; 
+--menu-mobile-background-color: #091554;
+--text-color-inverse:#C9D7D1;
+}
+/* este cod. sirve para hacer el scroll mas suave*/
+html {
+    scroll-behavior: smooth;
+}
+/* esta seccion ID sirve para poder tener ese tope siempre que nosotros hagamos scroll 
+en algunas de esas secciones*/
+section[id]{
+    scroll-margin-top: 100px;
+}
+
+
+
+body {
+font-family: 'Source Sans Pro', sans-serif;
+background-color: var(--theme-color);
+color: var(--text-color);
+padding-top: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+.horizontal-padding{
+    padding-left: 25px;
+    padding-right: 25px;    
+}
+.vertical-padding{
+    padding-top: 25px;
+    padding-bottom: 25px;   
+}
+
+@media (min-width:950px){
+    .horizontal-padding{
+        padding-left: 70px;
+        padding-right: 70px;    
+    }
+    .vertical-padding{
+        padding-top: 70px;
+        padding-bottom: 70px;   
+    }
+    
+  
+}
